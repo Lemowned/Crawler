@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/image_type_scan"
+        android:layout_gravity="center_vertical|left"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+
+        android:src="@drawable/torlast"/>
+
+    <LinearLayout
+        android:layout_width="230dp"
+        android:layout_height="45dp"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:paddingRight="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/host_dashboard"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:textSize="12dp"
+            android:text="Esto es una prueba "
+            android:layout_weight="1"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="8dp"
+            android:id="@+id/crawlId_dashboard"
+            android:maxLines="1"
+            android:textSize="10dp"
+            android:text="a8283748210384dfewjoewriewr81h9271hdjw8ddfhsjfhljkasdhfhiusdnfjaksdblauisdba.kdfasifhq"
+            android:layout_weight="1"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_gravity="right|top"
+        android:paddingTop="8dp"
+        android:paddingRight="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fecha_dashboard"
+            android:gravity="center"
+            android:textSize="10dp"
+            android:text="17/07/2017"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:layout_width="6dp"
+            android:layout_height="6dp"
+            android:layout_gravity="center"
+            android:id="@+id/status_dashboard"
+            android:src="@drawable/finished"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="right|bottom"
+        android:paddingRight="0dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="30dp"
+            android:src="@drawable/play"
+
+            android:id="@+id/play_dashboard"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+
+            android:id="@+id/stop_dashboard"
+            android:src="@drawable/stop"
+            android:layout_weight="1"
+            />
+
+
+    </LinearLayout>
+
+
+</FrameLayout>

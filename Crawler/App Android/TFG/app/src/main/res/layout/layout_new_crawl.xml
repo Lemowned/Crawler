@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BG_White">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/Black">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/BG_White"
+            android:textSize="16dp"
+            android:paddingLeft="16dp"
+            android:layout_gravity="center_vertical|left"
+            android:textStyle="normal"
+            android:alpha="12"
+            android:text="Introduce la URL" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/BG_Grey"
+            android:textSize="25dp"
+            android:paddingRight="16dp"
+            android:id="@+id/newCrawlTextView"
+            android:layout_gravity="right"
+            android:textStyle="normal"
+            android:alpha="12"
+            android:text="TOR" />
+
+
+    </FrameLayout>
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:background="@color/BG_Grey">
+
+        <EditText
+            android:layout_width="230dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="16dp"
+            android:layout_gravity="center_vertical|left"
+            android:id="@+id/createET"
+            android:gravity="center"
+            android:textSize="14dp"
+            android:background="@color/BG_White"
+            android:hint="http://www.jsufnkdhfys.onion"/>
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="25dp"
+            android:layout_gravity="center_vertical|right"
+            android:src="@drawable/launch32"
+            android:id="@+id/launch_button"
+            android:background="@drawable/boton_launch"
+            android:text="Launch" />
+
+
+    </FrameLayout>
+
+
+
+
+</LinearLayout>

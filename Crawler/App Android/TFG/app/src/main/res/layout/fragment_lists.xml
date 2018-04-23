@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BG_Grey">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@color/BG_Grey"
+        android:text="Word Count"
+        android:textSize="16dp"
+        android:gravity="center"
+        android:textColor="@color/BG_White"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:background="@color/BG_Grey"
+        android:scrollbars="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/BG_White"
+            android:id="@+id/detailWordsListView">
+
+        </ListView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="3"
+            android:background="@color/BG_White"
+            android:gravity="center"
+            android:textSize="90dp"
+            android:layout_marginLeft="2dp"
+            android:id="@+id/detailNumberTextView"
+            android:text="0"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="5"
+        android:background="@color/BG_Grey"
+        android:text="Forms"
+        android:textSize="16dp"
+        android:textColor="@color/BG_White"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_weight="3"
+        android:background="@color/BG_Grey"
+        android:scrollbars="vertical">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/BG_White"
+            android:layout_marginRight="1dp"
+            android:id="@+id/detailFormsListView">
+        </ListView>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/BG_White"
+            android:layout_marginLeft="1dp"
+            android:layout_weight="1"
+            android:id="@+id/detailLinksListView">
+        </ListView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

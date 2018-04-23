@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/BG_Grey"
+    android:orientation="vertical"
+>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/browserOcultableLinearLayout"
+        android:orientation="vertical"
+        android:layout_weight="10000"
+        android:visibility="invisible"
+        android:background="@color/BG_Grey">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/browserDetailLinearLayout"
+            android:orientation="horizontal"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/BG_White"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:id="@+id/myBrowserDetailImageView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:src="@drawable/nodata"
+                android:text="Hello World!"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_weight="3"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:paddingTop="10dp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="Link:"
+                    android:textColor="@color/BG_Grey"
+                    android:background="@color/BG_Blue_Lite"
+                    android:gravity="center_vertical"/>
+
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+
+                        android:id="@+id/browserDetailLinkTextView"
+                        android:textColor="@color/BG_Grey"
+                        android:text="N/A"
+                        android:textSize="11dp"
+                        android:gravity="center_vertical"/>
+
+                </HorizontalScrollView>
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textColor="@color/BG_Grey"
+                    android:text="Codigo HTTP:"
+                    android:background="@color/BG_Blue_Lite"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:text="N/A"
+                    android:id="@+id/browserDetailStatusTextView"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:textColor="@color/BG_Grey"
+                    android:text="Banner:"
+                    android:background="@color/BG_Blue_Lite"
+                    android:gravity="center_vertical"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="2"
+                    android:id="@+id/browserDetailBannerTextView"
+                    android:textColor="@color/BG_Grey"
+                    android:text="N/A"
+                    android:gravity="center_vertical"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/browserBrowserLinearLayout"
+        android:layout_weight="4"
+        android:orientation="vertical"
+        android:background="@color/BG_Grey">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="8"
+            android:background="@color/BG_Grey">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/BG_White"
+                    android:textSize="13dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"
+                    android:alpha="12"
+                    android:text="Directory Browser "
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/browserParentTextView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:textColor="@color/BG_White"
+                    android:textSize="13dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingBottom="5dp"
+                    android:gravity="center_vertical"
+                    android:layout_gravity="left"
+                    android:textStyle="normal"
+                    android:alpha="12"
+                    android:text=""
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+
+
+
+
+        </HorizontalScrollView>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:paddingRight="8dp"
+            android:paddingLeft="8dp"
+            android:background="@color/BG_Grey">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/BG_White"/>
+
+            <ListView
+                android:id="@+id/myBrowserListView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
